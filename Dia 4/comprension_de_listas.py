@@ -9,6 +9,6 @@ print(lista)
 
 
 pies = [10, 20, 30, 40, 50]
-metros = [pie * 0.3048 for pie in pies]
+metros = [pie / 0.3281 for pie in pies]
 
 print(metros)

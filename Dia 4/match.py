@@ -33,3 +33,19 @@ pelicula = {'nombre': 'El Padrino',
             'recaudacion': 245066411,}
 
 elementos = [cliente, pelicula, 'libro']
+
+for elemento in elementos:
+    match elemento:
+        case {'nombre': nombre,
+              'edad': edad,
+              'ocupacion': ocupacion}:
+            print('Es un cliente')
+            print(nombre, edad, ocupacion)
+        case {'nombre': nombre,
+              'director': director,
+              'calificacion': calificacion}:
+            print('Es una pelicula')
+            print(nombre, director, calificacion)
+        case _:
+            print('Es otro tipo de elemento')
+            print(elemento)
