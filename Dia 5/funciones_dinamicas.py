@@ -3,7 +3,7 @@
 
 # suma = 586 + 402
 
-# resultado = chequear_3_cifras(658)
+# resultado = chequear_3_cifras(suma)
 # print(resultado)
 
 # def chequear_3_cifras(lista):

@@ -1,6 +1,5 @@
 def suma(**kwargs):
     total = 0
-
     for clave, valor in kwargs.items():
         print(f'{clave} -> {valor}')
         total += valor
@@ -12,10 +11,8 @@ print(suma(a=1, b=2, c=3))
 def prueba(num1, num2, *args, **kwargs):
     print(f'El primer número es {num1}')
     print(f'El segundo número es {num2}')
-
     for arg in args:
         print(f'Argumento extra: {arg}')
-
     for clave, valor in kwargs.items():
         print(f'{clave} -> {valor}')
 

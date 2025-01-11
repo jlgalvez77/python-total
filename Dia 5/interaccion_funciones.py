@@ -1,15 +1,13 @@
 from random import shuffle
 
 # Lista inicial
-palitos = ['-', '--', '---', '----'     ]
-
+palitos = ['-', '--', '---', '----']
 
 
 # Mezclar palitos
 def mezclar(lista):
     shuffle(lista)
     return lista
-
 
 
 # Pedirle intento
@@ -21,7 +19,7 @@ def probar_suerte():
     return int(intento)
 
 # Comprobar intento
-def chequar_intento(lista, intento):
+def chequear_intento(lista, intento):
     if lista[intento -1] == '-':
         print('A lavar los platos')
     else:
@@ -31,4 +29,4 @@ def chequar_intento(lista, intento):
 
 palitos_mezclados = mezclar(palitos)
 seleccion = probar_suerte()
-chequar_intento(palitos_mezclados, seleccion)
+chequear_intento(palitos_mezclados, seleccion)

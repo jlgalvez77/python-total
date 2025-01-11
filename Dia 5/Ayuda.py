@@ -1,5 +1,5 @@
-dic = {'clave11': 100, 'clave2': 500}
-
+dic = {'clave1': 100, 'clave2': 500}
+# Elimina el último elemento insertado en el diccionario y lo devuelve
 a = dic.popitem()
 
 print(a)
